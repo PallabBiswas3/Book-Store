@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#best-selling">Best Selling</a></li>
+            <li><a href="#our-collection">Our Collection</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Intro section -->
+    <section id="intro">
+        <h1>Welcome to our Book Store</h1>
+        <!-- Add introductory content here -->
+    </section>
+
+    <!-- Best Selling section -->
+    <section id="best-selling"style="text-align: center;color: green;">
+        <h2>Best Selling Books</h2>
+        <div class="books">
+        <!-- Book cards will be dynamically generated here -->
+        
+            <!-- Book cards will be dynamically generated here -->
+        </div>
+    </section>
+
+    <!-- Our Collection section -->
+    <section id="our-collection"style="text-align: center;color: green;">
+        <h2>Our Collection</h2>
+        <div class="books">
+            <div class="books">
+        <!-- Book cards will be dynamically generated here -->
+          
+            <!-- Book cards will be dynamically generated here -->
+        </div>
+    </section>
+
+    <!-- Review section -->
+    <section id="reviews">
+        <h2 style="text-align: center;color: green;">Customer Reviews</h2>
+        <div class="reviews">
+            <!-- Reviews will be dynamically generated here -->
+        </div>
+    </section>
+
+    <!-- Contact form -->
+    <section id="contact">
+        <h2 style="text-align: center;background-color: rgb(221, 221, 57);">Contact Us</h2>
+        <form style="background-color: rgb(195, 255, 0);">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <label for="suggestion">Suggestion:</label><br>
+            <textarea id="suggestion" name="suggestion" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit" style="align-items: center;">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>Name: Book Store</p>
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <p>© 2024 Book Store. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Back to top button -->
+    <button onclick="scrollToTop()" id="btnTop">Back to Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

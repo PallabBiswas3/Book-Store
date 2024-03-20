@@ -1,0 +1,242 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#intro {
+    font-size: 200%;
+    text-align: center;
+    /* Intro section Styles */
+
+    background-image: url('bookstore.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* Adjust text color for better visibility */
+    padding: 100px 20px;
+    /* Adjust padding as needed */
+    text-align: center;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+/* CSS Styles for Best Selling Section */
+#best-selling .books {
+    display: flex;
+    /* Use flexbox */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+    justify-content: space-around;
+    /* Center items with space around */
+}
+
+/* Book Card Styles */
+.book-card {
+    width: 30%;
+    /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+
+/* Add some space between book cards */
+.book-card:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .book-card {
+        width: 100%;
+        /* Make book cards full width on smaller screens */
+    }
+}
+
+/* CSS Styles for Our Collection Section */
+#our-collection .books {
+    display: flex;
+    /* Use flexbox */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+    justify-content: space-around;
+    /* Center items with space around */
+}
+
+/* Book Card Styles */
+.book-card {
+    width: 30%;
+    /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+
+/* Add some space between book cards */
+.book-card:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #our-collection .books {
+        flex-direction: column;
+        /* Stack book cards vertically on smaller screens */
+    }
+
+    .book-card {
+        width: 100%;
+        /* Make book cards full width on smaller screens */
+    }
+}
+
+/* Book Card Styles */
+.book-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.book-card img {
+    width: 100px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    margin-top: 0;
+}
+
+/* Review section Styles */
+#reviews {
+    padding: 20px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review {
+    width: 25%;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review h3 {
+    margin: 0;
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .review {
+        width: 100%;
+    }
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Set smaller width for input fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 70%;
+    /* Adjust width as needed */
+    max-width: 300px;
+    /* Maximum width for larger screens */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Center the submit button */
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Back to Top Button Styles */
+#btnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#btnTop:hover {
+    background-color: orange;
+}
